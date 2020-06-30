@@ -21,4 +21,7 @@ mongoose.connect(process.env.DB_CONNECTION,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log('connected'))
 
-app.listen(8181)
+
+
+const port = process.env.PORT || 3000;
+app.listen(port)
